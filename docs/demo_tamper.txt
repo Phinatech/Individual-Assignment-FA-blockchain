@@ -1,0 +1,77 @@
+INFO : No admin keypair found.  Generating a fresh ECDSA P-256 keypair...
+INFO : Admin keys stored in 'keys/'.
+INFO : Genesis block created (index 0, hash 9a49e97e565303ca...).
+
+  ============================================================
+    BLOCKCHAIN ATTENDANCE TRACKING SYSTEM
+    Cryptographic ledger using SHA-256 + ECDSA P-256
+  ============================================================
+    Admin pubkey fingerprint: 552c1cac0a3f3da4...db5db6aa8c3a0a6d
+  ============================================================
+
+Loaded 8 student(s) from 'students.txt'.
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   Student ID:   Status (PRESENT / ABSENT / LATE): 
+  OK   : Attendance recorded for John Doe (ALU001) as PRESENT.
+         Block #1, hash 4bd71ae71c92f419...
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   Student ID:   Status (PRESENT / ABSENT / LATE): 
+  OK   : Attendance recorded for Jane Smith (ALU002) as LATE.
+         Block #2, hash 7910db643aa34ef7...
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   Block index to tamper:   New status to inject: TAMPER: Mutating block #2 status from 'LATE' -> 'ABSENT' WITHOUT recomputing its hash.
+
+  >> Run option 4 (Validate chain) to see the integrity check FAIL.
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  > FAIL : Block #2 hash mismatch.
+       stored:     7910db643aa34ef763f1be10164b519322e2f3167fc9f623b6260d1f467d4617
+       recomputed: dcf43e9748cce621591814b215a64c814437c290d9fc49a8e24a2894f3ea79aa
+FAIL : Block #2 signature verification failed.
+BAD  : Chain is INVALID.  Tampering detected.
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  > 
+Goodbye. Chain saved to 'attendance.dat'.

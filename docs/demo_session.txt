@@ -1,0 +1,152 @@
+INFO : No admin keypair found.  Generating a fresh ECDSA P-256 keypair...
+INFO : Admin keys stored in 'keys/'.
+INFO : Genesis block created (index 0, hash e0e6946a0e4814f3...).
+
+  ============================================================
+    BLOCKCHAIN ATTENDANCE TRACKING SYSTEM
+    Cryptographic ledger using SHA-256 + ECDSA P-256
+  ============================================================
+    Admin pubkey fingerprint: d1009e0b1c1251e6...7d22cf22cd3766e4
+  ============================================================
+
+Loaded 8 student(s) from 'students.txt'.
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  > 
++-----------------------------------------------------------------+
+| STUDENT ID   | FULL NAME                      | COURSE     |
++-----------------------------------------------------------------+
+| ALU001       | John Doe                       | BLK101     |
+| ALU002       | Jane Smith                     | BLK101     |
+| ALU003       | Amara Diallo                   | BLK101     |
+| ALU004       | Kwame Mensah                   | BLK101     |
+| ALU005       | Fatima Bello                   | BLK101     |
+| ALU006       | David Okonkwo                  | BLK101     |
+| ALU007       | Chioma Eze                     | BLK101     |
+| ALU008       | Aisha Mohammed                 | BLK101     |
++-----------------------------------------------------------------+
+Total: 8 student(s).
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   Student ID:   Status (PRESENT / ABSENT / LATE): 
+  OK   : Attendance recorded for John Doe (ALU001) as PRESENT.
+         Block #1, hash a7f65d5a2659b6b8...
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   Student ID:   Status (PRESENT / ABSENT / LATE): 
+  OK   : Attendance recorded for Jane Smith (ALU002) as LATE.
+         Block #2, hash d34b7253bf5a3bb0...
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   Student ID: 
+  ERROR: Student ID not found.
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  >   (unrecognised choice)
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  > 
+================================================================================
+ ATTENDANCE LEDGER  (3 blocks)
+================================================================================
+
+[Block 0]
+  Timestamp     : 2026-05-13 08:06:49
+  Student ID    : GENESIS
+  Full Name     : Genesis Block
+  Course        : N/A
+  Status        : GENESIS
+  Previous Hash : 0000000000000000...0000000000000000
+  Block Hash    : e0e6946a0e4814f3...51a1742ed9d0c2d5
+  Signature     : 71 bytes, VALID
+
+[Block 1]
+  Timestamp     : 2026-05-13 08:06:49
+  Student ID    : ALU001
+  Full Name     : John Doe
+  Course        : BLK101
+  Status        : PRESENT
+  Previous Hash : e0e6946a0e4814f3...51a1742ed9d0c2d5
+  Block Hash    : a7f65d5a2659b6b8...1ae26fecc2676262
+  Signature     : 72 bytes, VALID
+
+[Block 2]
+  Timestamp     : 2026-05-13 08:06:49
+  Student ID    : ALU002
+  Full Name     : Jane Smith
+  Course        : BLK101
+  Status        : LATE
+  Previous Hash : a7f65d5a2659b6b8...1ae26fecc2676262
+  Block Hash    : d34b7253bf5a3bb0...3679e3a10c1ddf3f
+  Signature     : 72 bytes, VALID
+
+================================================================================
+
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  > OK   : Chain is VALID (3 blocks, all hashes & signatures verified).
+  ---------------- MENU ----------------
+   1) View student registry
+   2) Mark attendance
+   3) View attendance records
+   4) Validate chain
+   5) Tamper test (demonstration)
+   6) Save chain now
+   0) Exit (auto-saves)
+  ---------------------------------------
+  > 
+Goodbye. Chain saved to 'attendance.dat'.

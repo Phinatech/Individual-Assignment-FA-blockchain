@@ -1,0 +1,10 @@
+# Format: student_id,full_name,course_code
+# Lines starting with # and blank lines are ignored.
+ALU001,John Doe,BLK101
+ALU002,Jane Smith,BLK101
+ALU003,Amara Diallo,BLK101
+ALU004,Kwame Mensah,BLK101
+ALU005,Fatima Bello,BLK101
+ALU006,David Okonkwo,BLK101
+ALU007,Chioma Eze,BLK101
+ALU008,Aisha Mohammed,BLK101
